@@ -4,6 +4,7 @@ var CarouselView = Backbone.View.extend({
     var template = $('.carousel-template').text()
     $('.carousel').html(Mustache.render(template, {contents:this.collection.toJSON()}))
     $('.carousel').carousel('next')
+    $('.carousel').carousel('stop')
   },
   initialize: function(collection){
     this.collection = collection
