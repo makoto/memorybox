@@ -10,7 +10,7 @@ $().ready(function(){
   contents.on("reset", function(d){
     var nav_tags = new NavigationTagsView(contents.tags())
     nav_tags.render()
-    // new this.filterByTag("Summer")
+    new CarouselView(d.filterByTag("Summer"))
   })
 
 })

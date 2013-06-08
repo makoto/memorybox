@@ -7,7 +7,6 @@ var NavigationTagsView = Backbone.View.extend({
     console.log('template', template)
     // This should go into events:{}
     console.log('aaa', this.tags)
-    // $('.navigation-tags a').on('click', this.open)
     $('.navigation-tags a').on('click', this.open)
   },
   initialize: function(tags){
@@ -17,6 +16,7 @@ var NavigationTagsView = Backbone.View.extend({
   open: function(e){
     e.preventDefault();
     var tag = e.target.text
-    console.log(tag)
+    console.log('oepn', window.contents)
+    new CarouselView(window.contents.filterByTag(tag))
   }
 });
