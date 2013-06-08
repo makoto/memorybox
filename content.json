@@ -1,0 +1,38 @@
+[
+{
+  "type":"image",
+  "url":"image/a.jpg",
+  "tags":["Beach", "London"]
+},
+{
+  "type":"image",
+  "url":"image/b.jpg",
+  "tags":["Beach"]
+},
+{
+  "type":"image",
+  "url":"image/c.jpg",
+  "tags":["Beach", "Summer"]
+},
+{
+  "type":"image",
+  "url":"image/d.jpg",
+  "tags":["Summer"]
+},
+{
+  "type":"image",
+  "url":"image/e.jpg",
+  "tags":["Summer"]
+},
+{
+  "type":"image",
+  "url":"image/f.jpg",
+  "tags":["Summer"]
+},
+{
+  "type":"image",
+  "url":"image/g.jpg",
+  "tags":["Summer"]
+},
+
+]
