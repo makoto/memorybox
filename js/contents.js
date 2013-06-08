@@ -7,5 +7,13 @@ var Contents = Backbone.Collection.extend({
   },
   tags: function(){
     return _.uniq(_.flatten(contents.pluck("tags")))
+  },
+  thumbnailForOtherTags: function(tag){
+    var self = this
+    var otherTags = _.difference(this.tags(), tag)
+    var filtered = otherTags.map(function(tag){
+      return self.filterByTag(tag).first()
+    })
+    return new Contents(filtered)
   }
 })

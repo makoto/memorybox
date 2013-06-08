@@ -15,6 +15,5 @@ var NavigationTagsView = Backbone.View.extend({
     e.preventDefault();
     var tag = e.target.text
     new CarouselView(window.contents.filterByTag(tag))
-    new ThumnailsView(window.conten)
   }
 });
