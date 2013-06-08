@@ -8,7 +8,9 @@ $().ready(function(){
 
   contents.fetch({reset: true, error: function() { console.log(arguments); }})
   contents.on("reset", function(d){
-    console.log('hello', contents.tags())
+    var nav_tags = new NavigationTagsView(contents.tags())
+    nav_tags.render()
+    // new this.filterByTag("Summer")
   })
 
 })
